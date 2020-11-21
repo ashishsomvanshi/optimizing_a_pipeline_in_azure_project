@@ -42,4 +42,4 @@ In future we can improve the best model by chociing diffrent primary_metrics and
 **Image of cluster marked for deletion**
 To clean up the resources following steps were followed: -
 1. Compute cluster deleted via code.
-2. Virtual Machine delteted Manually. 
+2. Virtual Machine delteted Manually in two steps frist we stoped it via ui and then deleted it via ui. (https://github.com/ashishsomvanshi/Optimizing_a_Pipeline_in_Azure_Project/blob/master/images/2020-11-21%20(4).png)
