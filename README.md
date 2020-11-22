@@ -31,6 +31,7 @@ The best performing model was a model with acuuracy of aproximately .91 with AUC
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 The best performing model with Hyperdrive Pipeline was a model with acuuracy aproximately : 0.91 and with Automl Pipeline, the best performing model was a model with acuuracy approximately :0.91. However, AutoML avoids the need of frequrent changes in script for diffrent algoritihms.
+Images of Diffrent Stages of Excecution of Code: https://github.com/ashishsomvanshi/Optimizing_a_Pipeline_in_Azure_Project/tree/master/images
 
 HyperDrive Pipeline:
 Classification technique used: Logistic Regression (Collumn to be classifed : y) 
@@ -67,6 +68,6 @@ In future we can improve the best model by choosing diffrent primary_metrics and
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
 **Image of cluster marked for deletion**
-To clean up the resources following steps were followed: -
+To clean up the resources following steps were followed: - (https://github.com/ashishsomvanshi/Optimizing_a_Pipeline_in_Azure_Project/tree/master/images) 
 1. Compute cluster deleted via code.
 2. Virtual Machine delteted Manually. 
