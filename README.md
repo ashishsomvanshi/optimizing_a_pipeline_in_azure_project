@@ -33,12 +33,12 @@ The best performing model was a model with acuuracy of aproximately .91 with AUC
 The best performing model with Hyperdrive Pipeline was a model with acuuracy aproximately : 0.91 and with Automl Pipeline, the best performing model was a model with acuuracy approximately :0.91. However, AutoML avoids the need of frequrent changes in script for diffrent algoritihms.
 Images of Diffrent Stages of Excecution of Code: https://github.com/ashishsomvanshi/Optimizing_a_Pipeline_in_Azure_Project/tree/master/images
 
-HyperDrive Pipeline:
+**HyperDrive Pipeline:**
 Classification technique used: Logistic Regression (Collumn to be classifed : y) 
 Best Run Selection: Selected out of multiple runs with same algorititm with diffrent hyperparameters.
 Data Pre-Prossesing: The data are cleaned with the clean_data() imported from train.py, with rows with missing values dropped and categorical(textual) fields converted to numerical fields.
 Confrugration Selected: -
-                hyperparameter_sampling = RandomParameterSampling ( With '--C' : choice(0.001,0.01,0.1,1,10,20,50,100,200,500,1000) and '--max_iter' : choice(50,75,100,200))
+                hyperparameter_sampling = RandomParameterSampling (With '--C' : choice(0.001,0.01,0.1,1,10,20,50,100,200,500,1000) and '--max_iter' : choice(50,75,100,200))
                 primary_metric_name = 'Accuracy'
                 primary_metric_goal = PrimaryMetricGoal.MAXIMIZE
                 max_total_runs = 20
@@ -47,7 +47,7 @@ Confrugration Selected: -
                 estimator = LogisticRegression based estimator from SKLearn (illustrated in train.py) with 20% labeled data as test data.
 With the above selected confugration the Hyperdrive Pipeline shows best results with --c = 50 and --max_iter = 300 giving accuracy of 0.91(approximate).
                 
-AutoML Pipeline:
+**AutoML Pipeline:**
 Classification technique used: Multiple Alogritims
 Best Run Selection: Selected out of multiple runs with diffrent algorititms with there auto generated hyperparameters.
 Data Pre-Prossesing: The data are cleaned with the clean_data() imported from train.py, with rows with missing values dropped and categorical(textual) fields converted to numerical fields.
