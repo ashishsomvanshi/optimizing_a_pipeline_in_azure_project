@@ -2,14 +2,13 @@ from sklearn.linear_model import LogisticRegression
 import argparse
 import os
 import numpy as np
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_errorhttps://github.com/ashishsomvanshi/optimizing_a_pipeline_in_azure_project/blob/master/train.py
 import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 import pandas as pd
 from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
-
 
 def clean_data(data):
     # Dict for cleaning data
@@ -39,18 +38,12 @@ def clean_data(data):
     
     return x_df,y_df
 
-# TODO: Create TabularDataset using TabularDatasetFactory
-# Data is located at:
-# "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
-
 ds = TabularDatasetFactory.from_delimited_files(['https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv'])
 
 
 x, y = clean_data(ds)
 
 x_train,x_test,y_train,y_test = train_test_split(x,y,random_state=0)
-
-### YOUR CODE HERE ###a
 
 run = Run.get_context()
 
